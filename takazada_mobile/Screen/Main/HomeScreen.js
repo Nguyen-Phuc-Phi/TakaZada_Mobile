@@ -63,7 +63,7 @@ class HomeScreen extends React.Component{
           <View style={{flex:1,flexDirection:'column',paddingLeft:5}}>
               <Image source={{uri:item.link}} 
                     style={{width: 200, height: 200}} />
-              <Text>{item.title}</Text>
+              <Text style={{fontSize:14}}>{item.title}</Text>
           </View>
       );}
     _renderItem_SD ({item, index}) {
@@ -71,7 +71,7 @@ class HomeScreen extends React.Component{
         <View style={{flex:1,flexDirection:'column',paddingLeft:15}}>
             <Image source={{uri:item.link}} 
                   style={{width: 330, height: 200,resizeMode:'stretch'}} />
-            <Text>{item.title}</Text>
+            <Text style={{fontSize:14}}>{item.title}</Text>
         </View>
       );}
     _renderItem_CP ({item, index}) {
@@ -79,8 +79,8 @@ class HomeScreen extends React.Component{
         <View style={{flex:1,flexDirection:'column',paddingLeft:5}}>
             <Image source={{uri:item.link}} 
                   style={{width: 200, height: 200}} />
-            <Text style={{width:210,textAlign: 'center'}}>{item.title}</Text>
-            <Text style={{width:210,fontSize: 15,fontWeight: 'bold',textAlign: 'center'}}>{item.prices}</Text>
+            <Text style={{fontSize:14,width:210,textAlign: 'center'}}>{item.title}</Text>
+            <Text style={{fontSize:14,width:210,fontSize: 15,fontWeight: 'bold',textAlign: 'center'}}>{item.prices}</Text>
         </View>
       );}
           
@@ -116,7 +116,7 @@ class HomeScreen extends React.Component{
                   placeholder='Tìm kiếm sản phẩm' />
                 <ScrollView>
                   <View style={styles._title}>
-                    <Text style={{color:"#ffffff",fontSize:20}}>Hot Product</Text>
+                    <Text style={{color:"#ffffff",fontSize:30}}>Hot Product</Text>
                   </View>
                   <View style={{width:500,height:300,backgroundColor:'white'}}>
                     <Carousel
@@ -130,7 +130,7 @@ class HomeScreen extends React.Component{
                     />
                   </View>
                   <View style={styles._title}>
-                    <Text style={{color:"#ffffff",fontSize:20}}>Special deals</Text>
+                    <Text style={{color:"#ffffff",fontSize:30}}>Special deals</Text>
                   </View>
                   <View style={{width:500,height:250,backgroundColor:'white',paddingTop:10}}>
                     <Carousel
@@ -146,7 +146,7 @@ class HomeScreen extends React.Component{
                     { this.pagination }
                   </View>
                   <View style={styles._title}>
-                    <Text style={{color:"#ffffff",fontSize:20}}>Computer</Text>
+                    <Text style={{color:"#ffffff",fontSize:30}}>Computer</Text>
                   </View>
                   <View style={{width:500,height:350,backgroundColor:'white',alignItems:'stretch'}}>
                     <Carousel

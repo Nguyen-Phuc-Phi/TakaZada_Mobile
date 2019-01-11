@@ -163,6 +163,9 @@ class MainScreen extends React.Component{
                           <FontAwesome name='question-circle' size={20} style={{color:tintColor}}/>
                         ),
                     }),
+                    contentOptions: {
+                        activeTintColor: '#FF9B05'
+                      }
                 },
                 'Đăng xuất':{ 
                     screen:LoginNavigator,

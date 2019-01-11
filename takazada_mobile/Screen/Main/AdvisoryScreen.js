@@ -73,11 +73,11 @@ class AdvisoryScreen extends React.Component{
         return(
             <ScrollView>
                 <View style={styles.container}>
-                    <Text style={{fontWeight:'bold',fontSize:20}}>Tìm hiểu về nhu cầu máy tính và laptop</Text>
-                    <Text style={{fontSize:12,marginLeft:10}}>Đây là 1 vài câu hỏi liên quan đến những vấn đề khi bạn muốn nâng cấp máy tính hoặc mua linh kiện máy mới..</Text>
+                    <Text style={{fontWeight:'bold',fontSize:30,textAlign:'center'}}>Tìm hiểu về nhu cầu máy tính và laptop</Text>
+                    <Text style={{fontSize:14,marginLeft:10}}>Đây là 1 vài câu hỏi liên quan đến những vấn đề khi bạn muốn nâng cấp máy tính hoặc mua linh kiện máy mới..</Text>
                     <View style={{borderColor:'black',borderWidth:3,width:350,height:700}}>
-                        <Text style={{fontSize:15,fontWeight:'bold',marginLeft:10}}>1) Bạn đã sử dụng chiếc máy tính đó bao lâu ?</Text>
-                        <View style={{marginLeft:5}}>
+                        <Text style={{fontSize:14,fontWeight:'bold',marginLeft:10}}>1) Bạn đã sử dụng chiếc máy tính đó bao lâu ?</Text>
+                        <View style={{paddingTop:5, marginLeft:5}}>
                           <RadioForm
                                       radio_props={radio_props_question1}
                                       initial={0}
@@ -86,8 +86,8 @@ class AdvisoryScreen extends React.Component{
                                       buttonSize={10}
                                       />
                         </View>
-                        <Text style={{fontSize:15,fontWeight:'bold',marginLeft:10}}>2) Khoảng thời gian sử dụng máy tính trong ngày ?</Text>
-                        <View style={{marginLeft:5}}>
+                        <Text style={{fontSize:14,fontWeight:'bold',marginLeft:10}}>2) Khoảng thời gian sử dụng máy tính trong ngày ?</Text>
+                        <View style={{paddingTop:5, marginLeft:5}}>
                           <RadioForm
                                       radio_props={radio_props_question2}
                                       initial={0}
@@ -96,8 +96,8 @@ class AdvisoryScreen extends React.Component{
                                       buttonSize={10}
                                       />
                         </View>
-                        <Text style={{fontSize:15,fontWeight:'bold',marginLeft:10}}>3) Mục đích sử dụng</Text>
-                        <View style={{marginLeft:5}}>
+                        <Text style={{fontSize:14,fontWeight:'bold',marginLeft:10}}>3) Mục đích sử dụng</Text>
+                        <View style={{paddingTop:5, marginLeft:5}}>
                           <RadioForm
                                       radio_props={radio_props_question3}
                                       initial={0}
@@ -106,8 +106,8 @@ class AdvisoryScreen extends React.Component{
                                       buttonSize={10}
                                       />
                         </View>
-                        <Text style={{fontSize:15,fontWeight:'bold',marginLeft:10}}>4) Hiện nay bạn cảm thấy máy mình thế nào?</Text>
-                        <View style={{marginLeft:5}}>
+                        <Text style={{fontSize:14,fontWeight:'bold',marginLeft:10}}>4) Hiện nay bạn cảm thấy máy mình thế nào?</Text>
+                        <View style={{paddingTop:5, marginLeft:5}}>
                           <RadioForm
                                       radio_props={radio_props_question4}
                                       initial={0}
@@ -116,8 +116,8 @@ class AdvisoryScreen extends React.Component{
                                       buttonSize={10}
                                       />
                         </View>
-                        <Text style={{fontSize:15,fontWeight:'bold',marginLeft:10}}>5) Bạn muốn cải thiện phần nào ở máy mình hiện tại</Text>
-                        <View style={{marginLeft:5}}>
+                        <Text style={{fontSize:14,fontWeight:'bold',marginLeft:10}}>5) Bạn muốn cải thiện phần nào ở máy mình hiện tại</Text>
+                        <View style={{paddingTop:5, marginLeft:5}}>
                           <RadioForm
                                       radio_props={radio_props_question5}
                                       initial={0}
@@ -125,12 +125,16 @@ class AdvisoryScreen extends React.Component{
                                       buttonColor={'#212121'}
                                       buttonSize={10}
                                       />
+                        </View >
+                        <View style={{paddingTop:15}}>
+                          <Button onPress={() => {
+                                  Alert.alert('Submit thành công!');
+                                  }} 
+                              title="Submit"
+                              color="#ff9b05">
+                          </Button>
                         </View>
-                        <Button onPress={() => {
-                                Alert.alert('Submit thành công!');
-                                }} 
-                            title="Submit">
-                        </Button>
+                        
                        
                     </View>
                 </View>
