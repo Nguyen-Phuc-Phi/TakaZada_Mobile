@@ -16,7 +16,7 @@
     "react-native-simple-radio-button": "^2.7.3",
     "react-native-snap-carousel": "^3.7.5",
     "react-native-swiper": "^1.5.14",
-    "react-navigation": "^3.0.6"
+    "react-navigation": "^5.0.0"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
